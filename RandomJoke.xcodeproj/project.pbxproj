@@ -16,6 +16,8 @@
 		11CE9D5722FC00FA00AEA230 /* RandomJokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE9D5622FC00FA00AEA230 /* RandomJokeUITests.swift */; };
 		11CE9D6522FC12E400AEA230 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE9D6422FC12E400AEA230 /* APIManager.swift */; };
 		11CE9D6722FD246100AEA230 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE9D6622FD246100AEA230 /* Joke.swift */; };
+		11CE9D6F22FD2FD100AEA230 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE9D6E22FD2FD100AEA230 /* Quote.swift */; };
+		11CE9D7122FD50A600AEA230 /* Fuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CE9D7022FD50A600AEA230 /* Fuck.swift */; };
 		4C75D34A1CD90759F5136B04 /* Pods_RandomJokeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F85E448E89A6C2CC34DB0CD /* Pods_RandomJokeTests.framework */; };
 		64BBAB8ECC31EEF670B559DB /* Pods_RandomJokeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7340C33CE098677E2462B358 /* Pods_RandomJokeUITests.framework */; };
 		FFA998731EBCFED3B9E8EE9B /* Pods_RandomJoke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BA7ADD3F03DA4E47236E0A /* Pods_RandomJoke.framework */; };
@@ -55,6 +57,10 @@
 		11CE9D5822FC00FA00AEA230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11CE9D6422FC12E400AEA230 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		11CE9D6622FD246100AEA230 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		11CE9D6822FD272000AEA230 /* RandomJoke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RandomJoke.xcodeproj; sourceTree = "<group>"; };
+		11CE9D6B22FD273C00AEA230 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = Pods/Alamofire; sourceTree = "<group>"; };
+		11CE9D6E22FD2FD100AEA230 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		11CE9D7022FD50A600AEA230 /* Fuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuck.swift; sourceTree = "<group>"; };
 		259C59CF2E1953A8E9DA8B75 /* Pods-RandomJoke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomJoke.release.xcconfig"; path = "Target Support Files/Pods-RandomJoke/Pods-RandomJoke.release.xcconfig"; sourceTree = "<group>"; };
 		3CA135EA8D10F0F0689B3302 /* Pods-RandomJoke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomJoke.debug.xcconfig"; path = "Target Support Files/Pods-RandomJoke/Pods-RandomJoke.debug.xcconfig"; sourceTree = "<group>"; };
 		6F85E448E89A6C2CC34DB0CD /* Pods_RandomJokeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomJokeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +132,8 @@
 				11CE9D3D22FC00FA00AEA230 /* Assets.xcassets */,
 				11CE9D3F22FC00FA00AEA230 /* LaunchScreen.storyboard */,
 				11CE9D4222FC00FA00AEA230 /* Info.plist */,
+				11CE9D6E22FD2FD100AEA230 /* Quote.swift */,
+				11CE9D7022FD50A600AEA230 /* Fuck.swift */,
 			);
 			path = RandomJoke;
 			sourceTree = "<group>";
@@ -148,6 +156,11 @@
 			path = RandomJokeUITests;
 			sourceTree = "<group>";
 		};
+		11CE9D6922FD272000AEA230 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2F1C3919C2BAE4754B5ACF2A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +177,8 @@
 		E1F3D4BCD2BF29DB6D5FC413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11CE9D6B22FD273C00AEA230 /* Alamofire */,
+				11CE9D6822FD272000AEA230 /* RandomJoke.xcodeproj */,
 				F3BA7ADD3F03DA4E47236E0A /* Pods_RandomJoke.framework */,
 				6F85E448E89A6C2CC34DB0CD /* Pods_RandomJokeTests.framework */,
 				7340C33CE098677E2462B358 /* Pods_RandomJokeUITests.framework */,
@@ -265,6 +280,12 @@
 			mainGroup = 11CE9D2A22FC00FA00AEA230;
 			productRefGroup = 11CE9D3422FC00FA00AEA230 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 11CE9D6922FD272000AEA230 /* Products */;
+					ProjectRef = 11CE9D6822FD272000AEA230 /* RandomJoke.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				11CE9D3222FC00FA00AEA230 /* RandomJoke */,
@@ -395,6 +416,8 @@
 				11CE9D6522FC12E400AEA230 /* APIManager.swift in Sources */,
 				11CE9D3922FC00FA00AEA230 /* ViewController.swift in Sources */,
 				11CE9D6722FD246100AEA230 /* Joke.swift in Sources */,
+				11CE9D6F22FD2FD100AEA230 /* Quote.swift in Sources */,
+				11CE9D7122FD50A600AEA230 /* Fuck.swift in Sources */,
 				11CE9D3722FC00FA00AEA230 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
